@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <meta http-equiv="content-type" content="text/html; charset=us-ascii">
+  <title>Skoll by Alaja - Theme Documentation</title>
+  <style type="text/css">
+  	body{font:15px/1.63 Georgia,serif;color:#333}#wrapper{width:720px;margin:0 auto}p,table,hr{margin:30px 0;}code,pre{font:13px/1.63 "Courier New",Courier,monospace;background-color:#f9f6f3;border:1px dotted #aaa;padding:4px}hr{border:none;border-top:1px dashed;}ul{list-style:square outside none;}img{max-width:100%;}
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <h1>Theme: <a href="../html/index.html">Skoll</a></h1>
+
+    <div>
+      <div>
+        <p><strong>Created: October, 2012<br>
+        By: Alaja web solutions co.<br></strong></p>
+      </div>
+
+      <div>
+        <p>Thank you for purchasing this theme. Hope you find this work to your liking.
+        Feedback and suggestions always welcome so don't hesitate to comment. If you have
+        questions that are not answered by this help file, please feel free to email via
+        user page contact form. You will find additional information and code samples in
+        the example pages provided. Open them in your browser to view the information, or
+        you can get the same information from the live preview of this theme available on
+        ThemeForest. There are comments within the code files to help you update and
+        modify the theme. If you are happy with the theme, please take a moment and send
+        us a message to support our future development.</p>
+
+        <p>Thank you,<br>
+        Alaja web solutions co.</p>
+      </div>
+    </div>
+    <hr>
+    <a name="toc" id="toc"></a>
+
+    <h2>Table of Contents</h2>
+
+    <ol>
+      <li><a href="#about">About The Theme</a></li>
+
+      <li><a href="#html">HTML Structure</a></li>
+
+      <li><a href="#css">CSS Files and Structure</a></li>
+
+      <li><a href="#javascript">JavaScript</a></li>
+
+      <!-- <li><a href="#files">PSD Files</a></li> -->
+
+      <li><a href="#contact">Contact Form</a></li>
+
+      <li><a href="#credits">Sources and Credits</a></li>
+    </ol>
+    <hr>
+    <a name="about" id="about"></a>
+
+    <h3><strong>A) About The Theme</strong> - <a href="#toc">top</a></h3>
+
+    <p>This theme is designed to be easy to use for either static HTML pages, or to
+    convert for a content management system (CMS). The design is broken down to allow
+    each section to be separated into a self-contained content block. These blocks are marked with comment tags to make finding them easier:</p>
+    <pre>
+&lt;!-- / End of previous block --&gt;
+
+&lt;div id="TheIdOfTheContainer" &gt;
+&lt;some HTML content /&gt;
+&lt;/div&gt;
+&lt;!-- / End of TheIdOfTheContainer --&gt;                   
+</pre>
+
+    <h4>Layouts - <a href="../html/page.html">page.html</a></h4>
+
+    <p>There are examples of the different layouts and content configurations in the
+    sample pages. Detailed information can be found on the "Layout" page (<a href=
+    "../html/page.html">page.html</a>) included in the sample files.</p>
+
+    <p>Theme used responsive center-aligned layout by default.</p>
+
+    <h4>Text - <a href="../html/page.html">page.html</a></h4>
+
+    <p>Text formatting details are also available in the sample files. For this
+    information view the page (<a href="../html/page.html">page.html</a>) included in the sample files. This contains example code and sample outputs of all the common HTML tags used for content editing.</p>
+
+    <h4>Fonts</h4>
+
+    <p>The logo in the included files with the main content uses "PT Serif" font. These are free fonts available online on <a href="http://www.google.com/webfonts/specimen/Montez">Google Web Fonts</a>. Font fallbacks:</p>
+    <p><code> 'PT Serif', 'Georgia', serif </code></p>
+
+    <p>Social icons use custom font generated on <a href="http://fontello.com/">fontello.com</a>. The font files you may find (and replace) inside the <strong>/3rd/font</strong> folder. Display these icons by using <strong>'social'</strong> class on parent. Each icon relative to the symbol in the table below (e.g. f = Facebook, h = GitHub):
+    <img src="chars.png">
+    </p>
+
+    <hr>
+    <a name="html" id="html"></a>
+
+    <h3><strong>B) HTML Structure</strong> - <a href="#toc">top</a></h3>
+
+    <p>This theme is a fixed-max-width design with pre-configured styles for creating layouts with three or many columns.</p>
+
+    <p>The default content area (#main) is easy to find. Look for the HTML with the text "main".</p>
+
+    <p>If you would like to edit the color, font, or style of any elements in one of these columns, you would do the following:</p>
+    <pre>
+#main a {
+        color: [color];
+}      
+</pre>
+
+    <p>If you find that your new style is not overriding, it is most likely because of a specificity problem. Scroll down in your CSS file and make sure that there isn't a similar style that has more weight. I.E.</p>
+    <pre>
+#main a {
+        color: [color];
+}            
+</pre>
+
+    <p>To ensure that your new styles are applied, make sure that they carry enough "weight" and that there isn't a style lower in the CSS file that is being applied after yours.</p>
+
+    <p>The HTML code is indented to make it easier to edit. There are also comment markers as a guides to find the beginning and end of major sections.</p>
+
+    <p>You may use the included sample files as templates for your own layouts. Be sure to backup a file before editing it, or create a copy and work from it.</p>
+    <hr>
+    <a name="css" id="css"></a>
+
+    <h3>C) CSS Files and Structure - <a href="#toc">top</a></h3>
+
+    <p>There are several CSS files included with this theme. These files are all located in the root folder. Within 'img' folder there are sub-folder 'css' containing style image sources.</p>
+
+    <p><strong>style.css</strong> - This is the foundation of all the site design. It
+    controls all the layout and design structure of the theme. The skin files may extend style.css to apply custom styles. Once you have the skin CSS file for you custom skin, be sure to add a link to it in all your HTML files in the
+    <code>&lt;head&gt;</code> section of each page. You may also wish to edit this file if you choose to customize the main menu.<br>
+    <br>
+    Your link should look something like this:<br>
+    <code>&lt;link rel="stylesheet" href="style-dark.css"&gt;</code></p>
+
+    <h4>More about skinning this design</h4>
+
+    <p>You can find more information about the CSS styles and skinning of the design by
+    viewing the sample pages.</p>
+    <hr>
+    <a name="javascript" id="javascript"></a>
+
+    <h3><strong>D) JavaScript</strong> - <a href="#toc">top</a></h3>
+
+    <p>Theme imports handcrafted and 3rd-party Javascript files. All related local
+    scripts can be found inside <strong>script.js</strong> file in the root and the <strong>/3rd/</strong> folder.</p>
+
+    <p>All the 3rd Party Scripts (MIT, GPL Licenses):</p>
+
+    <ol>
+      <li><a href="http://jquery.com/">jQuery</a> - jQuery library</li>
+
+      <li><a href="http://unwrongest.com/">Elastic</a> - auto-resizable textarea</li>
+
+      <!-- <li><a href="https://github.com/kswedberg/jquery-smooth-scroll/">Jquery Smooth Scroll</a></li> -->
+
+      <!-- <li><a href="https://github.com/scottjehl/Respond">Respond.js</a> - fast &amp; lightweight polyfill for min/max-width CSS3 Media Queries (for IE 6-8)</li> -->
+
+      <li><a href="http://responsiveslides.com">Responsive slides</a> - responsive image slider</li>
+
+      <li><a href="http://fitvidsjs.com/">Fitvids.js</a> - lightweight jQuery plugin for fluid width video embeds</li>
+
+    </ol>
+
+    
+<!--     <hr>
+    <a name="files"></a>
+    <h3><strong>E) PSD Files</strong> - <a href="#toc">top</a></h3>
+    
+    <p>Layout design files are included with this theme:</p>
+    
+    <ul>
+      <li>index.psd - the index page design</li>
+      <li>contact.psd - the contact page design</li>
+      <li>single.psd - the single portfolio item page design</li>
+    </ul> -->
+
+    <hr>
+    <a name="contact" id="contact"></a>
+
+    <h3><strong>F) Contact Form</strong> - <a href="#toc">top</a></h3>
+
+    <h4>Contact form setup</h4>
+
+    <p>Theme includes a working contact form. This form uses PHP and requires a server
+    running PHP for it to work.</p>
+
+    <blockquote>
+      <p><strong>Adding Your Email Address</strong></p>
+
+      <p>To add your own email address to the form, open the file
+      "<strong>contact.php</strong>" and at the very top of the file replace
+      "<strong>noreply@noreply.no</strong>" with your own email address. Be sure not to
+      delete the quotes, semi-colon or other code when making this change.</p>
+
+      <p><code>$your_email = "<strong>noreply@noreply.no</strong>";</code></p>
+
+      <p><strong>Problems Sending Emails</strong></p>
+
+      <p>If you experience trouble sending emails you should verify the following:</p>
+
+      <ol>
+        <li>Make sure the address entered in "<strong>contact.php</strong>" is
+        correct.</li>
+
+        <li>Verify that PHP is installed on the server your site is running on.</li>
+
+        <li>If necessary, contact your hosting provider to ensure they do not need to
+        activate something.</li>
+      </ol>
+    </blockquote>
+
+    <h4>Pages with Contact Forms</h4>
+
+    <p>Check that <strong>script.js</strong> included in the &lt;head&gt; tag of any page
+    with the contact form.</p>
+
+    <blockquote>
+      <pre>
+&lt;script src="script.js"&gt;&lt;/script&gt;
+</pre>
+    </blockquote>
+
+    <p>For and example of this review the included contact form sample page.</p>
+    <hr>
+    <a name="credits" id="credits"></a>
+
+    <h3><strong>G) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+
+    <p>The most of everything made by yours truly. The 3rd-party script credits you can find in <a href="#javascript">JavaScript</a> section.</p>
+
+    <hr>
+
+    <p>Once again, thank you so much for purchasing this product. If you have any
+    questions that are beyond the scope of this document, feel free to pose them in
+    theme's discussion section. If you have a more general question relating to the
+    themes, you might consider visiting ThemeForest forums.</p>
+
+    <p class="append-bottom alt large"><strong>Alaja web solutions co.</strong></p>
+
+    <p><a href="#toc">Go To Table of Contents</a></p>
+    <hr class="space">
+  </div>
+</body>
+</html>
