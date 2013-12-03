@@ -40,6 +40,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
   line-height: 20px;
 }
 
+.20px {
+  font-size: 20px;
+}
+
 .tooltip {
   display: inline;
   position: relative;
@@ -110,6 +114,7 @@ img {
   line-height: 42px;
 }
 #menu {
+  font-size: 20px;
   list-style: none;
   margin: 0;
   padding: 21px 0 10px;
@@ -186,6 +191,7 @@ img {
 }
 .sep.under {
   display: inline-block;
+  color: #00aeef;
 }
 .sep.pad {
   margin-bottom: 21px;
@@ -305,8 +311,10 @@ h4 {
 }
 .post blockquote,
 .post p {
-  max-width: 378px;
+  /*max-width: 515px;*/
+  max-width: 685px;
 }
+
 .post img {
   margin-bottom: 17px;
 }
