@@ -40,6 +40,39 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
   line-height: 20px;
 }
 
+.tooltip {
+  display: inline;
+  position: relative;
+}
+
+.tooltip:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: 26px;
+    color: #fff;
+    content: attr(title);
+    left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 220px;
+}
+
+.tooltip:hover:before{
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}
+
+
+/**/
+/**/
 
 html,
 body {
@@ -185,7 +218,8 @@ div.sep {
   src: url("3rd/font/social.eot?#iefix") format('embedded-opentype'), url("3rd/font/social.woff") format('woff'), url("3rd/font/social.ttf") format('truetype'), url("3rd/font/social.svg#social") format('svg');
 }
 body {
-  font: 14px/21px 'PT Serif', 'Georgia', serif;
+  font: 16px/21px FertigoPro-Italic;
+  /*'PT Serif', 'Georgia', serif;*/
 }
 h1,
 h2,
@@ -202,7 +236,13 @@ a.intro {
   text-transform: uppercase;
   text-decoration: none;
   font-style: normal; 
+  color: #00aeef;
+}
 
+.FertigoPro-Italic { 
+  font-family: FertigoPro-Italic;
+  font-weight: normal;
+  font-style: normal;
 }
 
 h1.intro {
@@ -233,7 +273,7 @@ h2 a {
   text-transform: none;
 }
 h1 {
-  font-size: 60px;
+  font-size: 45px;
 }
 h2 {
   font-size: 24px;
@@ -278,7 +318,7 @@ h4 {
   margin-bottom: 42px;
 }
 .post p {
-  font-size: 12px;
+  font-size: 17px;
 }
 blockquote {
   font-style: italic;
